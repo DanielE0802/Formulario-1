@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #0083FF;
+    margin: 100px 150px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFF;
+}
+
+.container__colum {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: 4;
+}
+
+
+.form {
+    flex-basis: 240px;
+    text-align: right;
+    max-width: 700px;
+    padding: 7px 17px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+
+
+}
+
+.form input {
+    width: 100%;
+    padding: 6px;
+    margin: 5px 0;
+}
+
+
+.form-img {
+    width: 300px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex: wrap;
+    justify-content: center;
+}
+
+.form-img img {
+
+    color: #FFF;
+    padding: 30px 70px;
+    animation: entrada 3s ease;
+
+}
+
+@keyframes entrada {
+    0% {
+        opacity: .0;
+        transform: rotatey(90deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotatey(180deg)
+    }
+}
+
+
+.form-text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+
+}
+
+.container__pais {
+    display: flex;
+    align-items: center;
+    flex: wrap;
+
+}
+
+.pais {
+    display: flex;
+    text-align: right;
+    max-width: 700px;
+    min-width: 200px;
+    border-left: 5px solid #41DD7E;
+}
+
+.container__pais label {
+    padding-right: 20px;
+}
+
+.container__carrera {
+    display: flex;
+
+}
+
+.carrera {
+    flex-shrink: 1;
+    min-width: 10px;
+
+
+}
+
+.carrera-title {
+    padding-right: 6px;
+    border-right: 5px solid #41DD7E;
+}
+
+.uno {
+    padding-left: 20px;
+
+}
+
+input {
+    border: none;
+    border-left: 5px solid #41DD7E;
+
+
+}
+
+.modalidad {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.modalidad-text {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+
+.modalidad p {
+    padding-right: 9px;
+    border-right: 5px solid #41DD7E;
+}
+
+.modalidad input {
+    width: 20px;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background: rgb(67, 219, 127);
+    background: linear-gradient(0deg, rgba(67, 219, 127, 1) 1%, rgba(100, 244, 156, 1) 100%);
+}
+
+@media screen and (max-width: 750px) {
+    .container{
+        margin: 35px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .container{
+        margin: 5px;
+    }
+}

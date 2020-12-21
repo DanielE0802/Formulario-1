@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Acamica</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3711ba64be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container__colum">
+            <div class="form-text">
+                <h1>Inscripciones Acamica</h1>
+            </div>
+
+            <div class="form-img">
+                <img src="Img/enviar-correo.png" alt="">
+
+            </div>
+        </div>
+        <form class="form">
+            <!--<label for="nombre">Nombre</label>  -->
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba aquí su nombre" required><br>
+
+            <!-- <label for="apellido">Apellido</label> -->
+            <input type="text" id="apellido" name="apellido" placeholder="Escriba aquí su apellido" required><br>
+
+
+            <!-- <label for="Email">Email</label> -->
+
+            <input type="email" id="Email" name="Email" placeholder="Ejemplo@gmail.com" required><br>
+            <div class="container__pais">
+                <label for="pais" required>País de origen</label>
+                <select name="pais" class="pais" required>
+                    <option value="">Selecciona tu país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Peru">Perú</option>
+                    <option value="Chile">Chile</option>
+                </select><br>
+                <br>
+            </div>
+            <br>
+            <div class="container__carrera">
+                <label for="carrera" class="carrera-title">¿A qué carreras deseas inscribirte?</label> <br>
+
+                <label for="carrera" class="uno"> UX/UI</label> <br>
+                <input type="checkbox" name="carrera" class="carrera">
+
+                <label for="carrera">Data Science</label> <br>
+                <input type="checkbox" name="carrera" class="carrera">
+
+                <label for="carrera">Desarrollo Web Full Stack</label> <br>
+                <input type="checkbox" name="carrera" class="carrera">
+
+                <label for="carrera">FrontEnd Avanzado</label> <br><br>
+                <input type="checkbox" name="carrera" class="carrera">
+
+            </div>
+            <div class="modalidad">
+                <p>Modalidad</p> <br> <br>
+
+                <div class="modalidad-text">
+                    <div>
+                        <label for="modalidad">Presencial</label>
+                        <input type="radio" name="modalidad" class="presencial">
+                    </div>
+                    <div>
+                        <label for="modalidad">Virtual</label>
+                        <input type="radio" name="modalidad" class="virtual">
+                    </div>
+                    <br> <br>
+                </div>
+            </div>
+            <!--
+            <span>¿Estas trabajando?</span>
+            <input type="radio" name="trabajo" id="trabajo">
+            <label for="trabajo">Si</label>
+
+            <input type="radio" name="trabajo" id="trabajo">
+            <label for="trabajo">No</label> <br> <br>
+
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha"> <br> <br>
+        
+            <label for="tel">Telefono de contacto</label>
+            <input type="number" name="tel" id="tel" placeholder="3054339035">
+            <br><br>
+            <label for="descripcion">Descripción personal</label> <br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción"></textarea>
+            -->
+
+
+            <br><br>
+            <input type="submit" name="enviar" id="enviar">
+
+            <input type="reset" name="resetear" id="resetear">
+
+
+
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
