@@ -166,6 +166,6 @@ input[type=reset]:hover {
 
 @media screen and (max-width: 470px) {
     .container{
-        margin: 5px;
+        margin:30px 5px ;
     }
 }
