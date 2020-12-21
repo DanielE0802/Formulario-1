@@ -168,4 +168,8 @@ input[type=reset]:hover {
     .container{
         margin:30px 5px ;
     }
+
+    .container__carrera label{
+        font-size: 13.5px;
+    } 
 }
